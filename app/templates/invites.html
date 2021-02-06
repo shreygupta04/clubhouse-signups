@@ -10,8 +10,7 @@
                         {% for user in users %}
                             <a href="{{ url_for('contact', user_id=user[0].id) }}" style="color: black; text-decoration: none;">
                                 <div class="grid-item">
-                                    <img src="{{ url_for('static', filename='contact.png') }}">
-                                    User {{user[1]}}
+                                    CLICK TO INVITE
                                 </div>
                             </a>
                         {% endfor %}
