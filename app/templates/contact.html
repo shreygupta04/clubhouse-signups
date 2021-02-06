@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="card" style="width: 35rem;">
+                <img src="{{ url_for('static', filename='contactphoto.jpeg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Your Contact</h5>
+                    <p class="card-text">Name: {{ user.name }}</p>
+                    <p class="card-text">Number: {{ user.number }}</p>
+                    <br>
+                    <h5 class="card-title">Instructions</h5>
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="badge rounded-pill bg-primary">1</span>
+                            </div>
+                            <div class="col">
+                                Using the information provided above, add {{ user.name }} as a contact.
+                            </div>
+                        </div>
+                    </p>
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="badge rounded-pill bg-primary">2</span>
+                            </div>
+                            <div class="col">
+                                Go onto the Clubhouse app and invite your contact.
+                            </div>
+                        </div>
+                    </p>
+                    <p class="card-text">
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="badge rounded-pill bg-primary">3</span>
+                            </div>
+                            <div class="col">
+                                After you complete this, click the finished button below and repeat steps 1-2 using your remaining invite.
+                            </div>
+                        </div>
+                    </p>
+                    <form action="" method="POST">
+                        {{ form.csrf_token() }}
+                        <input class="button5" id="submit" name="submit" type="submit" value="FINISHED" style="background-color: #00b4db;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="row justify-content-center mt-5">
+        <div class="col-8">
+            <div class="card custom-card">
+                
+                <div class="card-body" style="padding: 2rem;">
+                    <h5 class="card-title mb-3">Choose somone to invite below</h5>
+                    <div class="grid-layout">
+                        {% for user in users %}
+                            <a href="{{ url_for('contact', user_id=user[0].id) }}" style="color: black; text-decoration: none;">
+                                <div class="grid-item">
+                                    <img src="{{ url_for('static', filename='contact.png') }}">
+                                    User {{user[1]}}
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

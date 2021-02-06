@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="container mt-5 text-center">
+        <h1>Clubhouse Invites</h1>
+        <p>Website to promote access to the Clubhouse app, a way to build professional relationships in chatrooms.</p>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center h-100">
+            <div class="col-4">
+                <a href="{{ url_for('invites') }}" class="button5" style="background-color:#00b4db;">I AM ON CLUBHOUSE</a>
+            </div>
+            <div class="col-4">
+                <a href="https://forms.gle/24KsKQ8aVfsYqiik7" class="button5" style="background-color:#00b4db; target="_blank">I NEED AN INVITE</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

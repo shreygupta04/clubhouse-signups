@@ -1,0 +1,113 @@
+.button5{
+    display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+    width: 100%;
+}
+.button5:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+    a.button5{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+  div.waves{
+    width: 100%;
+    bottom: 0;
+    /*height: 100%;*/
+    position: absolute;
+    z-index: 99;
+  }
+  .tutorial-link{
+    font-family: sans-serif;
+    text-align: center;
+    color: #f3f3f3;
+  }
+  .tutorial-link h2{
+    background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+  .tutorial-link a{
+    text-decoration: none;
+    background: linear-gradient(90deg, #00b4db 0%, #224488 50%, #0083b0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+  
+  svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: min-content;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .spacer{
+    height: 100px;
+    width: 100%;
+  }
+  
+  @keyframes example {
+    0%   {
+      left:0px;
+      top:0px;}
+    
+    50%  {
+      left:-2000px;
+      top:200px;}
+    
+    100% {
+      left:0px; 
+      top:0px;}
+  }
+
+  .custom-card {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    overflow-x: scroll;
+    max-height: 550px;
+  }
+  
+  .grid-layout {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
+  
+  .grid-item {
+      background-color: rgb(216, 202, 202);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .grid-item:hover {
+      transition: all 0.2s;
+      transform: scale(1.02);
+  }
+
